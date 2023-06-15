@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.home a {
+  margin: 26px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBarImg {
+  width: 60px;
+  filter: hue-rotate(120deg);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar2 {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px;
+  background-color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
+.listBeers {
+  max-width: 60px;
+  height: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: flex;
+  border-bottom: 2px solid rgb(128, 128, 128);
+  padding: 20px;
+}
+
+.card2 {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.description {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.detImg {
+  width: 100px;
+display: flex;
+justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px;
+}
+
+.inputs {
+  justify-content: center;
 }
