@@ -13,20 +13,18 @@ export default function BeerDetailsPage(props) {
   }, []);
 
   const { beerId } = useParams();
-  console.log(beerId);
 
   const foundBeer = beers.find((theBeer) => {
     return theBeer._id === beerId;
   });
 
   return (
-    <div>
+    <div className="detail">
       <NavBar />
-      <h1>Beer Details</h1>
-      {!foundBeer && <h3>Beer not found!</h3>}
+      {!foundBeer && <h3>Still haven't found that beer...</h3>}
 
       {foundBeer && (
-        <>
+        <div>
           <img
             src={foundBeer.image_url}
             alt={foundBeer.name}
@@ -37,8 +35,12 @@ export default function BeerDetailsPage(props) {
           <span>{foundBeer.first_brewed}</span>
           <p>{foundBeer.attenuation_level}</p>
           <p>{foundBeer.description}</p>
-          {/* <p>{foundBeer.contributed_by.split("<", 1)}</p> */}
-        </>
+          {foundBeer.contributed_by ? (
+            <p>Created by: {foundBeer.contributed_by.split("<", 1)}</p>
+          ) : (
+            ""
+          )}
+        </div>
       )}
 
       <Link to="/beers">Back</Link>

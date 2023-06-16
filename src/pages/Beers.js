@@ -20,9 +20,13 @@ export default function BeersPage() {
           <Link to={`/beers/${beer._id}`} className="card2">
             <img src={beer.image_url} alt="beer" className="listBeers" />
             <div className="description">
-              <h3>{beer.name}</h3>
-              <p>{beer.tagline}</p>
-              {/* <p>Created by: {beer.contributed_by.split("<", 1)}</p> */}
+              <h1>{beer.name}</h1>
+              <h2 className="tag">{beer.tagline}</h2>
+              {beer.contributed_by ? (
+                <p>Created by: {beer.contributed_by.split("<", 1)}</p>
+              ) : (
+                ""
+              )}
             </div>
           </Link>
         </div>

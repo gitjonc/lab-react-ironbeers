@@ -8,7 +8,7 @@ export default function NavBar() {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1200px-Home-icon.svg.png"
           alt="home"
-          className="navBarImg"
+          className="navBarImg blue"
         ></img>
       </Link>
     </div>

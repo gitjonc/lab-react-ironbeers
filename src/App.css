@@ -1,10 +1,7 @@
-.home a {
-  margin: 26px
-}
+
 
 .navBarImg {
   width: 60px;
-  filter: hue-rotate(120deg);
 
 }
 
@@ -17,14 +14,28 @@
 }
 
 .listBeers {
-  max-width: 60px;
-  height: 130px;
+  max-width: 90px;
+  height: 160px;
+  margin-left: 60px;
+}
+
+.tag {
+  color: grey;
+
+}
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   border-bottom: 2px solid rgb(128, 128, 128);
   padding: 20px;
+  margin: 40px;
 }
 
 .card2 {
@@ -53,5 +64,17 @@ justify-content: center;
 }
 
 .inputs {
+  justify-content: center;
+}
+
+.main{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.center {
   justify-content: center;
 }
